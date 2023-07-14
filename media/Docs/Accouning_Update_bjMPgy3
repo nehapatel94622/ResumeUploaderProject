@@ -1,0 +1,21 @@
+- Payment Terms - create, get, detailed page Done
+- Taxes - create-Done, get-Done, detailed page-Done
+- Incoterms - create-Done, get-Done, detailed page-Done
+- chart of account - create-Done, get-Done, detailed page-Done
+- Fiscal Position -  create-Done, get-Done, detailed page-Done
+- Journals -   create-Done, get-Done, detailed page-WIP
+- Journal Entries - WIP
+- Journal Items - WIP
+- Invoice - WIP
+- Credit Notes - WIP
+- Bill - WIP
+- Refund - WIP
+- Required Fields Notification
+- container As form, 
+
+
+Incoming_payment = Manual, NEFT, RTGS, Check Receipt, Cash Receipt, Electronic
+
+Outgoing_payment = Manual, NEFT, RTGS, Check Payment, Cash Payment
+
+

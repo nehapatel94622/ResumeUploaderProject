@@ -1,0 +1,31 @@
+  
+    # def save(self, *args, **kwargs):
+    #     self.reference_id = f"MO/{str(Manufacturing_Order.objects.all().count()+1).zfill(5)}"
+    #     if self.components_location and self.components_location:
+    #         is_exist_source_location = Inventory.objects.filter(
+    #             location_stock=self.source_warehouse, product=self.product).exists()
+    #         add_data_source_ware_house = Inventory.objects.filter(
+    #             location_stock=self.source_warehouse, product=self.product).first()
+
+    #         is_exist_manu_ware_house = Inventory.objects.filter(
+    #             location_stock=self.manu_warehouse, product=self.product).exists()
+    #         add_data_manu_ware_house = Inventory.objects.filter(
+    #             location_stock=self.manu_warehouse, product=self.product).first()
+
+    #         if is_exist_source_ware_house and is_exist_manu_ware_house:
+    #             print("True*************************************")
+    #             add_data_manu_ware_house.quantity += self.quantity
+    #             add_data_manu_ware_house.save()
+    #             if add_data_source_ware_house.quantity >= self.quantity and add_data_source_ware_house.quantity > 0:
+    #                 add_data_source_ware_house.quantity -= self.quantity
+    #                 add_data_source_ware_house.save()
+    #                 super(Manufacturing_Order, self).save(*args, **kwargs)
+
+    #             else:
+    #                 raise ValidationError(
+    #                     detail="source location quantity does not exist")
+
+    #         else:
+    #             raise ValidationError(detail="warehouse does not exist")
+    #     else:
+    #         super(Manufacturing_Order, self).save(*args, **kwargs)
